@@ -27,6 +27,22 @@ dependencies {
 }
 ```
 
+## Example
+
+```java
+private class ExampleCommand extends Command {
+  protected ExampleCommand() {
+    super("example", new String[] {"test"}, new String[0]);
+  }
+
+  @Override
+  public boolean execute(String[] arguments) throws Exception {
+    //FILL WITH LOGIC
+    return false;
+  }
+}
+```
+
 ## License
 
 [GPL](https://github.com/breuerlukas/commandra/blob/main/LICENSE.md)
